@@ -2,7 +2,6 @@ package br.com.beblue.desafio.model.enums;
 
 import java.math.BigDecimal;
 import java.util.Arrays;
-import java.util.List;
 
 import br.com.beblue.desafio.exception.IllegalArgumentException;
 
@@ -52,8 +51,8 @@ public enum Mpb {
 
     public static BigDecimal obterCashBackPeloDia(String data) {
 
-        List<Mpb> pop = Arrays.asList(Mpb.values());
-        return pop.stream().filter(a -> a.name().equals(data))
+        return Arrays.asList(Mpb.values()).stream()
+                .filter(a -> a.name().equals(data))
                 .map(m -> new BigDecimal(m.getCashback())).findFirst()
                 .orElseThrow(() -> new IllegalArgumentException(
                         "Não foi possivel capturar o cashback do dia: "
