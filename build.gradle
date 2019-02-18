@@ -1,0 +1,42 @@
+plugins {
+	id 'org.springframework.boot' version '2.1.3.RELEASE'
+	id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+repositories {
+	mavenCentral()
+	maven { url 'https://repo.spring.io/milestone' }
+}
+
+ext {
+	set('springCloudVersion', 'Greenwich.RELEASE')
+}
+
+group = 'br.com.beblue.desafio'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = 1.8
+
+jar {
+    baseName = 'desafio-beblue'
+    version = '0.0.1-SNAPSHOT'
+    archiveName = 'desafio-beblue.jar'
+}
+
+dependencies {
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	compile('org.springframework.boot:spring-boot-starter-web')
+	compile('org.springframework.boot:spring-boot-starter-data-jpa')
+	runtimeOnly 'org.springframework.boot:spring-boot-devtools'
+	runtime('com.h2database:h2')
+	compile("org.hibernate:hibernate-java8")
+    compile("com.fasterxml.jackson.datatype:jackson-datatype-jdk8")
+    compile("com.fasterxml.jackson.datatype:jackson-datatype-jsr310")
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
+}
