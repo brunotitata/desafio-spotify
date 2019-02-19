@@ -53,7 +53,7 @@ public class VendaService {
         case "pop":
             venda.setValorCashBack(Pop.obterCashBackPeloDia(
                     registraVenda.getDiaDaCompra().getDayOfWeek().name()));
-            venda.setValorRetorado((Pop
+            venda.setValorRetornado((Pop
                     .obterCashBackPeloDia(registraVenda.getDiaDaCompra()
                             .getDayOfWeek().name())
                     .multiply(album.getPreco()).multiply(
@@ -64,7 +64,7 @@ public class VendaService {
         case "rock":
             venda.setValorCashBack(Rock.obterCashBackPeloDia(
                     registraVenda.getDiaDaCompra().getDayOfWeek().name()));
-            venda.setValorRetorado((Rock
+            venda.setValorRetornado((Rock
                     .obterCashBackPeloDia(registraVenda.getDiaDaCompra()
                             .getDayOfWeek().name())
                     .multiply(album.getPreco()).multiply(
@@ -75,7 +75,7 @@ public class VendaService {
         case "classic":
             venda.setValorCashBack(Classic.obterCashBackPeloDia(
                     registraVenda.getDiaDaCompra().getDayOfWeek().name()));
-            venda.setValorRetorado((Classic
+            venda.setValorRetornado((Classic
                     .obterCashBackPeloDia(registraVenda.getDiaDaCompra()
                             .getDayOfWeek().name())
                     .multiply(album.getPreco()).multiply(
@@ -86,7 +86,7 @@ public class VendaService {
         case "mpb":
             venda.setValorCashBack(Mpb.obterCashBackPeloDia(
                     registraVenda.getDiaDaCompra().getDayOfWeek().name()));
-            venda.setValorRetorado((Mpb
+            venda.setValorRetornado((Mpb
                     .obterCashBackPeloDia(registraVenda.getDiaDaCompra()
                             .getDayOfWeek().name())
                     .multiply(album.getPreco()).multiply(

@@ -26,7 +26,7 @@ public class Venda {
     private BigDecimal valorTotal;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd")
     private LocalDate dataDaCompra;
-    private BigDecimal valorRetorado;
+    private BigDecimal valorRetornado;
 
     public Venda(String nomeAlbum, BigDecimal valorAlbum,
             BigDecimal valorCashBack, Integer quantidade, BigDecimal valorTotal,
@@ -37,7 +37,7 @@ public class Venda {
         this.quantidade = quantidade;
         this.valorTotal = valorTotal;
         this.dataDaCompra = dataDaCompra;
-        this.valorRetorado = valorRetornado;
+        this.valorRetornado = valorRetornado;
     }
 
     public Venda() {
@@ -95,12 +95,12 @@ public class Venda {
         return id;
     }
 
-    public BigDecimal getValorRetorado() {
-        return valorRetorado;
+    public BigDecimal getValorRetornado() {
+        return valorRetornado;
     }
 
-    public void setValorRetorado(BigDecimal valorRetorado) {
-        this.valorRetorado = valorRetorado;
+    public void setValorRetornado(BigDecimal valorRetornado) {
+        this.valorRetornado = valorRetornado;
     }
 
     @Override
@@ -119,7 +119,7 @@ public class Venda {
         result = prime * result
                 + ((valorCashBack == null) ? 0 : valorCashBack.hashCode());
         result = prime * result
-                + ((valorRetorado == null) ? 0 : valorRetorado.hashCode());
+                + ((valorRetornado == null) ? 0 : valorRetornado.hashCode());
         result = prime * result
                 + ((valorTotal == null) ? 0 : valorTotal.hashCode());
         return result;
@@ -164,10 +164,10 @@ public class Venda {
                 return false;
         } else if (!valorCashBack.equals(other.valorCashBack))
             return false;
-        if (valorRetorado == null) {
-            if (other.valorRetorado != null)
+        if (valorRetornado == null) {
+            if (other.valorRetornado != null)
                 return false;
-        } else if (!valorRetorado.equals(other.valorRetorado))
+        } else if (!valorRetornado.equals(other.valorRetornado))
             return false;
         if (valorTotal == null) {
             if (other.valorTotal != null)

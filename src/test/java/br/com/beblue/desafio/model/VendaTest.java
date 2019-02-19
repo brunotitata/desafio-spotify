@@ -32,7 +32,7 @@ public class VendaTest {
         assertEquals(VALOR_TOTAL, venda.getValorTotal());
         assertEquals(LocalDate.now(), venda.getDataDaCompra());
         assertEquals(Integer.valueOf(1), venda.getQuantidade());
-        assertEquals(VALOR_RETORNADO, venda.getValorRetorado());
+        assertEquals(VALOR_RETORNADO, venda.getValorRetornado());
     }
 
 }

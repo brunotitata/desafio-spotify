@@ -135,10 +135,11 @@ Endpoint responsavel por buscar vendas com utilização de parametros
             "id": "77dec1a9-68b8-4f60-a5d8-f1fbd457ce29",
             "nomeAlbum": "100 Rock",
             "valorAlbum": 98.07,
-            "valorCashBack": 78.46,
+            "valorCashBack": 0.40,
             "quantidade": 2,
             "valorTotal": 196.14,
             "dataDaCompra": "2019-02-12"
+            "valorRetorado": 78.46
         }
     ],
     "last": true,
