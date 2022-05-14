@@ -1,5 +1,7 @@
 # Album Spotify [![Build Status](https://travis-ci.com/brunotitata/beblue-test.svg?branch=master)](https://travis-ci.com/brunotitata/beblue-test) [![HitCount](http://hits.dwyl.io/brunotitata@gmail.com/beblue-test.svg)](http://hits.dwyl.io/brunotitata@gmail.com/beblue-test)
 
+teste teste teste tese
+
 **Instalação**
 <br />
 Para executar o projeto, entre na pasta e execute os seguintes comandos:
